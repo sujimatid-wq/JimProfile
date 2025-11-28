@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maulana — Coding & Game Developer</title>
+  <meta name="description" content="Profil Maulana — Coding dan Pengembang Game. Portfolio, keahlian, dan kontak untuk kerja sama." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#6ee7b7;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071029 0%, #071a2b 60%);color:#e6eef8;line-height:1.6}
+    .container{max-width:1000px;margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#07203a}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;margin-bottom:28px}
+    .card{background:var(--card);padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);backdrop-filter: blur(6px)}
+    h1{margin:0 0 8px;font-size:28px}
+    .tag{color:var(--accent);font-weight:700}
+    .lead{color:var(--muted);margin-top:6px}
+    .cta{margin-top:16px;display:flex;gap:12px}
+    .btn{padding:10px 14px;border-radius:10px;font-weight:700;border:0;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042028}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .skills{display:flex;flex-direction:column;gap:12px}
+    .skill{display:flex;justify-content:space-between;align-items:center}
+    .bar{height:10px;background:var(--glass);border-radius:8px;width:100%;margin-left:12px;overflow:hidden}
+    .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#60a5fa)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
+    .game-card{padding:14px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03)}
+    .game-thumb{height:130px;border-radius:8px;background:linear-gradient(135deg,#10213a,#0b2b4b);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.grid-3{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="avatar">M</div>
+        <div>
+          <div style="font-weight:800">Maulana</div>
+          <div style="font-size:13px;color:var(--muted)">Coding & Game Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#skill">Keahlian</a>
+        <a href="#port">Portofolio</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Hai, saya <span class="tag">Maulana</span></h1>
+        <p class="lead">Saya seorang developer yang fokus pada <strong>coding</strong> dan <strong>pembuatan game</strong>. Saya membangun pengalaman interaktif — dari game 2D ringan sampai prototipe 3D menggunakan Unity dan Godot. Saya suka menyelesaikan masalah teknis dan membuat gameplay yang menyenangkan.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:maulana@email.com">Hubungi Saya</a>
+          <a class="btn btn-ghost" href="#port">Lihat Portofolio</a>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:14px">
+          <div>📍 Indonesia</div>
+          <div>💼 Freelance / Kontrak</div>
+          <div>⌛ 5+ tahun pengalaman</div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card" style="display:flex;flex-direction:column;gap:12px">
+          <h3 style="margin:0">Keahlian Utama</h3>
+          <div class="skills">
+            <div class="skill"><strong>Unity (C#)</strong><div style="width:120px;text-align:right;color:var(--muted)">90%</div></div>
+            <div class="bar"><i style="width:90%"></i></div>
+
+            <div class="skill"><strong>Godot (GDScript)</strong><div style="width:120px;text-align:right;color:var(--muted)">75%</div></div>
+            <div class="bar"><i style="width:75%"></i></div>
+
+            <div class="skill"><strong>JavaScript / Web</strong><div style="width:120px;text-align:right;color:var(--muted)">80%</div></div>
+            <div class="bar"><i style="width:80%"></i></div>
+
+            <div class="skill"><strong>Python / Prototyping</strong><div style="width:120px;text-align:right;color:var(--muted)">70%</div></div>
+            <div class="bar"><i style="width:70%"></i></div>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card" style="text-align:center">
+          <h4 style="margin:6px 0">Siap bekerja sama?</h4>
+          <p style="color:var(--muted);margin:0 0 12px">Saya menerima proyek freelance pembuatan game, porting, dan sistem gameplay.</p>
+          <a class="btn btn-primary" href="mailto:maulana@email.com">Kirim Brief</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="card" style="margin-bottom:16px">
+      <h2>Tentang Saya</h2>
+      <p>Saya Maulana — developer yang mencintai game dan logika. Di jalur karier saya, saya menggabungkan kemampuan programming dengan desain gameplay sederhana yang mudah dipahami pemain. Metode kerja saya: iterasi cepat (rapid prototyping), testing bersama pemain, dan delivery yang on-time.</p>
+      <div style="margin-top:8px;color:var(--muted)">Tools: Unity, Godot, Blender (basic), Visual Studio, Git, Figma, Construct</div>
+    </section>
+
+    <section id="skill">
+      <div class="card">
+        <h2>Keahlian Teknis</h2>
+        <div class="grid-3" style="margin-top:12px">
+          <div>
+            <h4>Game Development</h4>
+            <p style="color:var(--muted);margin-top:6px">Desain gameplay, physics sederhana, AI musuh dasar, UI game, dan optimasi untuk perangkat mobile.</p>
+          </div>
+          <div>
+            <h4>Web & Tools</h4>
+            <p style="color:var(--muted);margin-top:6px">Pembuatan demo web game (HTML/CSS/JS), integrasi API, dan deployment sederhana ke hosting statis.</p>
+          </div>
+          <div>
+            <h4>Testing & QA</h4>
+            <p style="color:var(--muted);margin-top:6px">Playtesting, debugging, profiling performa, dan perbaikan bug sebelum rilis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="port" class="card" style="margin-top:16px">
+      <h2>Portofolio Game</h2>
+      <div class="portfolio-grid">
+        <div class="game-card">
+          <div class="game-thumb">Racing Dash (Mobile)</div>
+          <h3 style="margin:10px 0 6px">Racing Dash</h3>
+          <p style="color:var(--muted);margin:0 0 10px">Game balap 2D dengan kontrol sederhana, power-up, dan leaderboard.</p>
+          <div style="display:flex;gap:8px">
+            <a class="btn btn-primary" href="#">Lihat Demo</a>
+            <a class="btn btn-ghost" href="#">Detail</a>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div class="game-thumb">Puzzle Maze (Web)</div>
+          <h3 style="margin:10px 0 6px">Puzzle Maze</h3>
+          <p style="color:var(--muted);margin:0 0 10px">Permainan teka-teki berbasis physics dan level editor sederhana untuk pemain.</p>
+          <div style="display:flex;gap:8px">
+            <a class="btn btn-primary" href="#">Lihat Demo</a>
+            <a class="btn btn-ghost" href="#">Detail</a>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div class="game-thumb">Arcade Miner (PC)</div>
+          <h3 style="margin:10px 0 6px">Arcade Miner</h3>
+          <p style="color:var(--muted);margin:0 0 10px">Prototype gameplay roguelite dengan upgrade dan sistem risiko/imbalan.</p>
+          <div style="display:flex;gap:8px">
+            <a class="btn btn-primary" href="#">Lihat Demo</a>
+            <a class="btn btn-ghost" href="#">Detail</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:16px">
+      <h2>Kontak</h2>
+      <p style="color:var(--muted)">Tertarik bekerja sama? Kirim brief singkat melalui email atau isi formulir singkat di bawah.</p>
+      <form style="display:grid;gap:8px;max-width:700px;margin-top:8px">
+        <input name="name" placeholder="Nama Anda" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+        <input name="email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+        <textarea name="message" placeholder="Pesan singkat / brief proyek" rows="5" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-primary" type="button" onclick="location.href='mailto:maulana@email.com'">Kirim via Email</button>
+          <button class="btn btn-ghost" type="reset">Reset</button>
+        </div>
+      </form>
+
+      <div style="margin-top:12px;color:var(--muted)">
+        <div>Email: maulana@email.com</div>
+        <div>GitHub: <a href="#" style="color:var(--accent);text-decoration:none">github.com/maulana</a></div>
+        <div>LinkedIn: <a href="#" style="color:var(--accent);text-decoration:none">linkedin.com/in/maulana</a></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="card" style="display:inline-block;padding:12px 18px;border-radius:10px">© Maulana — Coding & Game Developer</div>
+    </footer>
+  </div>
+</body>
+</html>
